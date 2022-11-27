@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { TodoModule } from './todos/todo.module';
 import { FooterComponent } from './footer/footer.component';
 import { environment } from '../environments/environment';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     TodoModule,
     StoreModule.forRoot({ todos: todoReducer }),
     StoreDevtoolsModule.instrument({
